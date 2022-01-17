@@ -45,7 +45,7 @@
     } else {
         setInterval(() => {
             navigator.geolocation.getCurrentPosition(getPosition)
-        }, 5000);
+        }, 10000);
     }
 
     var marker, circle;
@@ -72,7 +72,7 @@
         map.fitBounds(featureGroup.getBounds())
 
         console.log("Your coordinate is: Lat: " + lat + " Long: " + long + " Accuracy: " + accuracy)
-        //alert("Your coordinate is: Lat: " + lat + " Long: " + long + " Accuracy: " + accuracy)
+        alert("Your coordinate is: Lat: " + lat + " Long: " + long + " Accuracy: " + accuracy)
     }
 
 </script>
